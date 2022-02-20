@@ -1,0 +1,31 @@
+.flex-container {
+	display: flex;
+	background: magenta;
+	height: 300px;
+	/*flex-direction: row;*/
+	/*flex-direction: column;*/
+	/*flex-direction: column-reverse;*/
+	/*flex-direction: row-reverse;*/
+
+}
+
+.flex-container__item {
+	height: 100px;
+	/*width: 100px;*/
+	background: yellow;
+	/*flex-grow: 1;*/
+	/*flex-shrink:1;*/
+	/*flex-basis: 200px;*/
+	border: 1px solid #ccc;
+	flex:  0 1 20%; /*обычно используется в верстке*/
+}
+
+.flex-container__item:first-child {
+	align-self: flex-end; /*Для конкретного элемента внутри контейнера, как aligh-content, align-inems, justify-content*/
+/*	flex-grow: 2;
+	flex-shrink: 3;
+*/}
+
+/*.flex-container__item:first-child {
+	flex-grow: 2;
+}*/

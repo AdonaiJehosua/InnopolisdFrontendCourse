@@ -1,0 +1,39 @@
+.class {
+
+}
+
+div {
+
+}
+
+#my_id {
+
+}
+
+[href] {
+	color: red;
+}
+
+[href="https://yandex.ru"] {
+	color:  yellow;
+}
+
+[class~="class-1"] {
+	color:  gray;
+}
+
+[class|="classs"] {
+	color:  green;
+}
+
+[href^="https://vk"] {
+	color: purple;
+}
+
+[href$=".org"] {
+	color: orange;
+}
+
+[href*="examplE"i] {
+	color: cyan;
+}

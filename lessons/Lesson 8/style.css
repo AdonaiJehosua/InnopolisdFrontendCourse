@@ -1,0 +1,37 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin:  0px;
+	width: 500;
+	height: 400;
+	color:  #fff;
+	/*background-image: url(img/background.jpg);*/
+	background-size: cover;
+	background-repeat-y:  no-repeat;
+
+}
+
+.square {
+	width:  500px;
+	 }
+
+.square_red {
+	background-color:  red;
+	color: #ffff00;
+}
+
+.square_green {
+	background-color:  green;
+
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-tip: 10px;
+	padding-bottom: 10px;
+}
+
+.image {
+	hidth:  100px;
+	height: 100px;
+	float: right;
+}

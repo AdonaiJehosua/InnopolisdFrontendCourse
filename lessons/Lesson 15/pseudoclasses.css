@@ -1,0 +1,93 @@
+.button {
+	outline: none;
+	border: none;
+	background: red;
+	padding: 5PX 7PX;
+	border-radius: 5px;
+	transition: .2s ba;
+}
+
+.button:hover {
+	background: rgba(255, 0, 0, 0.7); /*Апасити меняет цвет всего элемента, поэтому можно хитрить и менять только цвет фона*/
+}
+
+.button:focus {
+	background: lime;
+}
+
+.paragraph {
+	color:  #ccc;
+}
+
+.paragraph:active {
+	color: green;
+}
+
+.link {
+	color: red;
+	display: block;
+	.text-decoration: none;
+}
+
+.link:active {
+	color: orange;
+}
+
+.link:visited {
+	color: yellow;
+}
+
+.link:focus {
+	outline: none;
+	text-decoration: underline;
+	background: #ccc;
+}
+
+.block, .block-2 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.block__elem, .block-2__elem {
+	width:  40px;
+	height: 40px;
+	background: red;
+	margin: 20px;
+	color:  white;
+}
+
+.block__elem:first-child { /*не различает теги, сортирует чисто по родительскому блоку*/
+	background: magenta;
+}
+
+.block__elem:nth-child(2) {
+	background: blue;
+}
+
+.block__elem:nth-child(2n+2) { /*где n - от 0 до конца*/
+	background: blue;
+}
+
+.block__elem:last-child {
+	background: purple;
+}
+ 
+.block__elem:nth-last-child(3) { /*как nth-child, но с конца*/
+	background: yellow;
+}
+
+.block-2__elem:first-of-type { /*первые элементы разных типов*/
+	background: lime;
+}
+
+.block-2__elem:nth-of-type(5) { /*выбирает определенные по счету элементы каждого типа*/
+	background: orange;
+}
+
+.block-2__elem:last-of-type {
+	background: black;
+}
+
+.block-2__elem:nth-last-of-type(2) {
+	background: purple;
+}

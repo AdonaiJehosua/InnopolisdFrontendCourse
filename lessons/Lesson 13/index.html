@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Frontend | Lesson 13</title>
+</head>
+<body>
+	<form method="POST" action="/submit">
+	<div>
+		<input type="checkbox" id="checkbox-input">
+		<label for="checkbox-input">Checkbox</label>
+	</div>
+	<div>
+		<lable for="text-input">Text</lable>
+		<input placeholder="Введите что-нибудь..." id="text-input">
+	</div>
+	<div>
+		<lable for="color-input">Color</lable>
+		<input type="color" id="color-input">
+	</div>
+	<div>
+		<lable for="e-mail-input">E-mail</lable>
+		<input id="e-mail-input" type="email" required>
+	</div>
+	<div>
+		<lable for="file-input">File</lable>
+		<input id="file-input" type="file" accept="audio/*" multiple>
+	</div>
+	<div>
+		<lable for="number-input">Number</lable>
+		<input id="number-input" type="number" min="-10" max="10">
+	</div>
+	<div>
+		<lable for="password-input">Pussword</lable>
+		<input id="password-input" type="password">
+	</div>
+	<div>
+		<input id="radio-input" type="radio" name="radio-group" value="RADIO1">
+		<lable for="radio-input">Radio-1</lable>
+		<input id="radio-input" type="radio" name="radio-group" value="RADIO1">
+		<lable for="radio-input">Radio-2</lable>
+		<input id="radio-input" type="radio" name="radio-group" value="RADIO1">
+		<lable for="radio-input">Radio-3</lable>
+	</div>
+	<div>
+		<lable for="tel-input">Phone</lable>
+		<input id="tel-input" type="tel" maxlength="11" readonly>
+	</div>
+	<div>
+		<lable for="url-input">URL</lable>
+		<input id="url-input" type="url">
+	</div>
+	<div>
+		<lable for="disabled-input">Disabled-text</lable>
+		<input id="disabled-input" type="text" disabled value="value">
+	</div>
+	<div>
+		<lable for="checkbox-checked-input">Checked checkbox</lable>
+		<input id="checkbox-checked-input" type="checkbox" checked>
+	</div>
+	<div>
+		<lable for="input-mode-input">Input-mode</lable>
+		<input id="input-mode-input" type="text" inputmode="numeric">
+	</div>
+	<div>
+		<input type="text" list=>
+	</div>
+	<input type="reset">
+	<button type="submit">Submit</button>
+	</form>
+</body>
+</html>

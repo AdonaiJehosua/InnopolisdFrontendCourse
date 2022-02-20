@@ -1,0 +1,49 @@
+body {
+	background-color: rgba(50, 3, 256, 0.4);
+}
+
+h1 {
+	color: #ffff00;
+	font-family: sans-serif;
+}
+
+h1.form-title {
+	text-align: center;
+}
+
+input,
+button {
+	display: block;
+}
+
+input {
+	border:  none;
+	background:  none;
+	border-bottom: 1px solid #ffff00;
+	outline:  none;
+	border-radius:  0;
+}
+
+button {
+	border:  none;
+	border-radius: 0;
+	background-color: #ffff00;
+	margin-top:  20px;
+}
+
+.form-inner-container {
+	display: flex;
+	margin: 0 auto;
+	flex-direction:  column;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	margin: 0 auto
+}
+
+button.form-button {
+	margin-top: 20px;
+}
