@@ -1,0 +1,302 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background: #1B2473;
+}
+
+body {
+	margin: 0;
+}
+
+.form {
+	position: relative;
+	width: 600px;
+	height: 412px;
+	top: 82px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	margin: auto;
+}
+
+.form__fontstyle {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	color: #787878;
+}
+
+.form__head {
+	position: absolute;
+	height: 50px;
+	left: 149px;
+	top: 30px;
+	font-size: 50px;
+	line-height: 50px;
+}
+
+.form__input {
+	position: absolute;
+	width: 509px;
+	height: 49px;
+	left: 45px;
+	background: #FFFFFF;
+	border: 2px solid #787878;
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 0 0 0 15px;
+	font-size: 28px;
+	outline: none;
+}
+
+.form__email {
+	position: absolute;
+	top: 112px;
+}
+
+.form__email-head {
+	top: -19px;
+}
+
+.form__email-input {
+	top: 0px;
+}
+
+.form__pass {
+	position: absolute;
+	top: 193px;
+}
+
+.form__pass-head {
+	top: -19px;
+}
+
+.form__pass-input {
+	top: 0px;
+}
+
+.form__input-head {
+	position: absolute;
+	height: 16px;
+	left: 53px;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.form__input::placeholder {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	color: #CCCCCC;
+	font-size: 28px;
+}
+
+.form__checkbox-wrapper {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	width: fit-content;
+	top: 258px;
+	left: 45px;
+}
+
+.form__checkbox-wrapper-offset {
+	top: 280px;
+}
+
+.form__checkbox {
+	position: absolute;
+	opacity: 0;
+	width: 24px;
+	height: 100%;
+	top:  0;
+	left: 0;
+	margin: 0;
+	outline: none;
+}
+
+.form__checkbox-mark {
+	width: 24px;
+	height: 24px;
+	background: #FFFFFF;
+	border: 2px solid #787878;
+	box-sizing: border-box;
+	border-radius: 7px;
+}
+
+.form__checkbox:checked + .form__checkbox-mark {
+	background-image: url(img/BlackOverlord.jpg);
+	background-size: 100%;
+}
+
+.form__checkbox-lable {
+	margin: 0 0 0 10px;
+	font-size: 14px;
+}
+
+.form__error-checkbox-message {
+	top: 24px;
+	left: 0;
+	display: none;
+}
+
+.form__button {
+	position: absolute;
+	border: none;
+	width: 180px;
+	height: 52px;
+	top: 334px;
+	left: 218px;
+	background: #1A226B;
+	border-radius: 10px;
+	color:  #FFFFFF;
+	font-style: normal;
+	font-size: 24px;
+	transition: 0.3s opacity;
+}
+
+.form__button:hover {
+	opacity: 0.8;
+}
+
+.form__button:focus {
+	outline: none;
+	border: 2px solid #787878;
+	-webkit-text-stroke-width:  0.5px;
+	-webkit-text-stroke-color: #787878;
+}
+
+
+
+										/*Классы для ошибок*/
+
+.form__error {
+	font-size: 10px;
+	line-height: 16px;
+	color: red;
+	position: absolute;
+	left: 45px;
+	width: max-content;
+}
+
+.form__error-email-message-empty {
+	top: 49px;
+	display: none;
+}
+
+.form__error-email-message-invalid {
+	top: 49px;
+	display: none;
+}
+
+.form__error-pass-message-empty {
+	top: 49px;
+	display: none;
+}
+
+.form__error-pass-message-invalid {
+	top: 49px;
+	display: none;
+}
+
+.form__error-checkbox-message {
+	top: 24px;
+	left: 0;
+	display: none;
+}
+
+.form__star {
+	position: absolute;
+	top: 7px;
+	left: 34px;
+}
+
+.form__checkbox-star {
+	position: absolute;
+	top:2px;
+	left: -10px;
+}
+
+.form__error-border-color {
+	border-color: red;
+}
+
+.form__error-fontcolor {
+	color: red;
+}
+
+.form__error-empty-show-message {
+	display: block;
+}
+
+.form__error-invalid-show-message {
+	display: block;
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+	
+	body {
+		padding: 20px;
+		height: 100%;
+	}	
+
+	.form {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: 100vh;
+		top: 0;
+	}
+
+	.form__head {
+		left: auto;
+		top: 38px;
+		font-size: 60px;
+	}
+
+	.form__email {
+		top: 125px;
+		width: 100%;
+	}
+
+	.form__pass {
+		top: 211px;
+		width: 100%;
+	}
+
+	.form__input {
+		left: auto;
+		width: calc(100% - 90px);
+		margin: 0 0 0 45px;
+	}
+
+	.form__checkbox-wrapper {
+		top: 279px;
+		width: calc(100% - 90px);
+	}
+
+	.form__checkbox-mark {
+		width: 32px;
+		min-width: 32px;
+		height: 32px;
+	}
+
+	.form__checkbox-lable {
+		font-size: 18px;
+	}
+
+	.form__button {
+		position: absolute;
+		border: none;
+		width: 220px;
+		height: 80px;
+		top: 375px;
+		left: auto;
+	}
+
+}
+
+

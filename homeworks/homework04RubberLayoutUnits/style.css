@@ -1,0 +1,143 @@
+* {
+	box-sizing: border-box;
+}
+
+h2 {
+	margin-left: 20px;
+	margin-bottom: 0;
+}
+
+p {
+	padding: 5px 10px;
+	margin: 0;
+	border-bottom: 3px solid black;
+}
+
+.body {
+	margin: 0;
+	background-color: black;
+	min-height: 100%;
+}
+.header {
+	min-width: 250px;
+	display: flex;
+	position: fixed;
+	width:  100%;
+	height: 50px;
+	margin: 0;
+	z-index: 10;
+}
+
+.header__head {
+	text-shadow:
+		2px 0px 1px rgb(125, 0, 0),
+		0px 2px 1px rgb(125, 0, 0),
+		-2px 0px 1px rgb(125, 0, 0),
+		0px -2px 1px rgb(125, 0, 0);
+	margin: auto;
+}
+
+.header__header-img {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.header__header-line {
+	width: 100%;
+	height: 5px;
+	background-color: black;
+	position: fixed;
+	top:  50px;
+	z-index: 10;
+}
+
+.aside {
+	position: relative;
+	top:  55px;
+	background-color: darkgrey;
+	max-width: 185px;
+	padding: 10px;
+	margin-left: 5px;
+}
+
+.aside__link {
+	display: block;
+}
+
+.aside__aside-head {
+	font-size: 14pt;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.list-container {
+	background-color: darkgrey;
+	position: absolute;
+	top: 55px;
+	left: 195px;
+	margin-right: 5px;
+	min-width: 250px;
+}
+
+.list-container__list-letter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	position: sticky;
+	top: 55px;
+	background-color: black;
+	height: 50px;
+	font-size: 24pt;
+	color:  black;
+	text-shadow:
+		2px 0px 1px rgb(125, 0, 0),
+		0px 2px 1px rgb(125, 0, 0),
+		-2px 0px 1px rgb(125, 0, 0),
+		0px -2px 1px rgb(125, 0, 0);
+	margin: auto;
+	}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 185px;
+	position: fixed;
+	bottom: 0px;
+	padding: 0 0 15px 15px;
+}
+
+.Alphabet {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+}
+
+.Alphabet__container {
+	width: 80px;
+	text-align: center;
+}
+
+
+
+.c {
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+	font-size: 10pt;
+	color:  white;
+	min-height: 317px;
+}
+
+.Alphabet__alphabet-link {
+	color: rgb(125, 0, 0);
+	text-decoration: none;
+}
+
+.Alphabet__alphabet-link:hover {
+	color:  orange;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Homework 10</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form class="form">
+		<div class="form__head form__fontstyle">Регистрация</div>
+		<div class="form__email">
+			<div class="form__input-head form__fontstyle form__email-head">Email</div>
+			<input placeholder="johndoe@email.com" class="form__fontstyle form__input form__email-input" type="email">
+			<div class="form__star form__email-star form__fontstyle">*</div>
+			<div class="form__error form__error-email-message-empty form__fontstyle">Поле обязательно для заполнения</div>
+			<div class="form__error form__error-email-message-invalid form__fontstyle">Email невалидный</div>
+		</div>
+		<div class="form__pass">
+			<div class="form__input-head form__fontstyle form__pass-head">Пароль</div>
+			<input placeholder="Введите пароль" class="form__fontstyle form__input form__pass-input" type="password">
+			<div class="form__star form__pass-star form__fontstyle">*</div>
+			<div class="form__error form__error-pass-message-empty form__fontstyle">Поле обязательно для заполнения</div>
+			<div class="form__error form__error-pass-message-invalid form__fontstyle">Пароль должен содержать как минимум 8 символов</div>
+		</div>
+		<div class="form__checkbox-wrapper form__fontstyle">
+			<input class="form__checkbox" type="checkbox" id="input-checkbox">
+			<div class="form__checkbox-mark">
+				<div class="form__star form__checkbox-star form__fontstyle">*</div>
+			</div>
+			<lable class="form__checkbox-lable" for="input-checkbox">Я согласен c <a class="form__fontstyle" href="https://pikabu.ru/story/instruktsiya_polzovaniya_yorshikom_4548702" target="_blank" rel="nofollow noopener noreferre">Правилами пользования приложением</a></lable>
+			<div class="form__error form__error-checkbox-message form__fontstyle">Поле обязательно для заполнения</div>
+		</div>
+		<button class="form__button form__fontstyle">Регистрация</button>
+	</form>
+	<script src="script.js"></script>
+</body>
+</html>
